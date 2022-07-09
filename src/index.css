@@ -6,4 +6,13 @@
   body {
     font-family: "Source Sans Pro", sans-serif;
   }
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+  *::-webkit-scrollbar-track {
+    background: hsl(210deg, 3%, 25%);
+  }
+  *::-webkit-scrollbar-thumb {
+    background: #686868;
+  }
 }

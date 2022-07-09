@@ -36,9 +36,12 @@ export default function RoomSetting(props: RoomSettingProps) {
           <HiSearch className="text-2xl p-3 bg-bg-search rounded-full cursor-pointer" />
           <p>Tìm kiếm</p>
         </div> */}
-        {btnData.map((i) => {
+        {btnData.map((i, index) => {
           return (
-            <div className="text-center flex items-center flex-col gap-2 ">
+            <div
+              key={index}
+              className="text-center flex items-center flex-col gap-2 "
+            >
               <a
                 href="/"
                 className="block p-2 bg-bg-search rounded-full cursor-pointer text-2xl "

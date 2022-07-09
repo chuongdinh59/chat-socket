@@ -1,7 +1,6 @@
-import * as React from "react";
+import { User } from "../interface";
 import ChatBar from "./ChatBar";
 import RoomInfo from "./RoomInfo";
-import RoomSetting from "./RoomSetting";
 
 export interface RoomProps {}
 

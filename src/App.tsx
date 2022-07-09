@@ -1,12 +1,18 @@
+import { Provider } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Chat from "./pages/Chat";
-import Register from "./pages/Register";
+import Login from "./pages/Login";
+import { store } from "./store";
+
 export default function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Chat />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Login />}></Route>
+          <Route path="/chat" element={<Chat />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   );
 }
